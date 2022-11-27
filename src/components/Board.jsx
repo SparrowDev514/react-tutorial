@@ -1,11 +1,12 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
 import Square from "@/components/Square.jsx";
 import "@/index.css";
 
 const Board = () => {
+  // 最初は変数iが渡されているが、その値は読み取られない。
+  // value={i}を追加することでSquareコンポーネントに値が渡る。
   const renderSquare = (i) => {
-    return <Square />;
+    return <Square value={i} />;
   };
 
   const status = "Next player: X";
@@ -14,6 +15,7 @@ const Board = () => {
     <div>
       <div className="status">{status}</div>
       <div className="board-row">
+        {/* // returnの中でjsを書くときは{}で囲む */}
         {renderSquare(0)}
         {renderSquare(1)}
         {renderSquare(2)}

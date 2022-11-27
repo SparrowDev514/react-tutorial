@@ -25,3 +25,9 @@ src/ フォルダ内に index.js という名前のファイルを作り、こ�
 src/ フォルダ内に main.js という名前に、ここの JS コードを記入する。
 src/ フォルダ内のApp.cssとApp.jsxを削除する。
 ```
+
+## ブランチの順番
+
+1. feature_complete_tutorial → チュートリアルの「スターターコードの中身を確認する」まで
+2. feature_display_board 　 → チュートリアルの「データを Props 経由で渡す」まで
+3. feature_pass_props→ チュートリアルの「インタラクティブなコンポーネントを作る」まで
