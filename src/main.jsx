@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import Board from "@/components/Board.jsx";
 import "@/index.css";
 
-// index.htmlのid rootでGameコンポーネントを描画する
 ReactDOM.createRoot(document.getElementById("root")).render(
   <div className="game">
     <div className="game-board">
