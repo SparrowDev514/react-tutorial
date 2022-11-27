@@ -1,6 +1,9 @@
-import React, { useState } from "react";
+import React, { createContext, useState } from "react";
 import Square from "@/components/Square.jsx";
 import "@/index.css";
+
+// 関数の外でexportする
+export const ValueContext = createContext();
 
 const Board = () => {
   const [squares, setSquares] = useState(Array(9).fill(null));
@@ -16,7 +19,18 @@ const Board = () => {
 
   const renderSquare = (i) => {
     // for文を回すためにkeyを追加
-    return <Square key={i} value={squares[i]} onClick={() => handleClick(i)} />;
+
+    return (
+      // keyの位置を ValueContextに書かないといけないことに注意
+      // 渡したいコンポーネントを`ValueContext.Provider`で囲み
+      // 関数も渡せる渡したい値を{hogehoge}でかく
+      <ValueContext.Provider
+        key={i}
+        value={{ square: squares[i], handler: () => handleClick(i) }}
+      >
+        <Square />
+      </ValueContext.Provider>
+    );
   };
 
   const renderBoard = () => {
