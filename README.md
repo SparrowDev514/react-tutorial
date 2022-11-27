@@ -34,3 +34,7 @@ src/ フォルダ内のApp.cssとApp.jsxを削除する。
 4. feature_display_X → チュートリアルの「インタラクティブなコンポーネントを作る」まで
 5. feature_liftup_state → チュートリアルの「State のリフトアップ」まで
 6. feature_display_O → チュートリアルの「手番の処理」まで
+
+   ---　リファクタリング ---
+
+7. refactor → renderSquare を繰り返しで表示・CSS を手版によって切り替え
