@@ -32,3 +32,4 @@ src/ フォルダ内のApp.cssとApp.jsxを削除する。
 2. feature_display_board → チュートリアルの「データを Props 経由で渡す」まで
 3. feature_pass_props → チュートリアルの「インタラクティブなコンポーネントを作る」途中まで
 4. feature_display_X → チュートリアルの「インタラクティブなコンポーネントを作る」まで
+5. feature_liftup_state → チュートリアルの「State のリフトアップまで」まで
