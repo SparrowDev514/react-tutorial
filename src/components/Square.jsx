@@ -1,14 +1,25 @@
-import React from "react";
+// useStateはimportする必要がある。
+import React, { useState } from "react";
 import "@/index.css";
 
 // 与えられたpropsはpropとして受け取る。
 // propsはいくつ変数を渡されても、一つのオブジェクトにまとめられて渡される。
 const Square = (props) => {
+  // マスに渡す値（X or ○）を管理する。初期値はNull
+  // setValue("hogehoge") → value = hogehogeのような動きをする
+  const [value, setValue] = useState(null);
+
   return (
-    <button className="square">
-      {console.log("propsの中身を表示", props)}
-      {console.log("渡した値を表示", props.value)}
-      {props.value}
+    <button
+      className="square"
+      // onClickでクリックイベントを動かすことができる
+      // onClick={console.log('click')} とかくと、レンダリングのたびにconsole.logを読んでしまうので注意。onClickの中身は関数を渡すようにする
+      onClick={() => {
+        // console.log("click");
+        setValue("X");
+      }}
+    >
+      {value}
     </button>
   );
 };
