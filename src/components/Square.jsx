@@ -4,7 +4,6 @@ import "@/index.css";
 
 const Square = () => {
   return (
-    //　子コンポーネントでは<ValueContext.Consumer>で囲み、オブジェクトから値(or関数)を取り出して使う
     <ValueContext.Consumer>
       {(value) => {
         return (
