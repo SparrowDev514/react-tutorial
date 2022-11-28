@@ -38,3 +38,4 @@ src/ フォルダ内のApp.cssとApp.jsxを削除する。
    ---　リファクタリング ---
 
 7. refactor → renderSquare を繰り返しで表示・CSS を手版によって切り替え
+8. useContext で書き換える
