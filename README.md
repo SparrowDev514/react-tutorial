@@ -26,3 +26,17 @@ src/ フォルダ内に index.js という名前のファイルを作り、こ�
 src/ フォルダ内に main.js という名前に、ここの JS コードを記入する。
 src/ フォルダ内のApp.cssとApp.jsxを削除する。
 ```
+
+## ブランチの順番
+
+1. feature_complete_tutorial → チュートリアルの「スターターコードの中身を確認する」まで
+2. feature_display_board → チュートリアルの「データを Props 経由で渡す」まで
+3. feature_pass_props → チュートリアルの「インタラクティブなコンポーネントを作る」途中まで
+4. feature_display_X → チュートリアルの「インタラクティブなコンポーネントを作る」まで
+5. feature_liftup_state → チュートリアルの「State のリフトアップ」まで
+6. feature_display_O → チュートリアルの「手番の処理」まで
+
+   ---　リファクタリング ---
+
+7. refactor → renderSquare を繰り返しで表示・CSS を手版によって切り替え
+8. useContext で書き換える
